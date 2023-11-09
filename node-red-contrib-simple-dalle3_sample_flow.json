@@ -1,0 +1,62 @@
+[
+    {
+        "id": "d730c3eb0cc69df5",
+        "type": "simple-dalle3",
+        "z": "9cd95800f964c8d3",
+        "name": "",
+        "Token": "key",
+        "output": "url",
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "fc376e5b761b55f6"
+            ]
+        ]
+    },
+    {
+        "id": "9c36526e4387519d",
+        "type": "inject",
+        "z": "9cd95800f964c8d3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Node-RED で開発しているエンジニア",
+        "payloadType": "str",
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "d730c3eb0cc69df5"
+            ]
+        ]
+    },
+    {
+        "id": "fc376e5b761b55f6",
+        "type": "image",
+        "z": "9cd95800f964c8d3",
+        "name": "",
+        "width": "320",
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 820,
+        "y": 280,
+        "wires": []
+    }
+]
