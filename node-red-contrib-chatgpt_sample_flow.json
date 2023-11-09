@@ -1,0 +1,61 @@
+[
+    {
+        "id": "16d0f831f0984f13",
+        "type": "inject",
+        "z": "9cd95800f964c8d3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Node-RED について教えて",
+        "payloadType": "str",
+        "x": 330,
+        "y": 140,
+        "wires": [
+            [
+                "38780144dda8aa4b"
+            ]
+        ]
+    },
+    {
+        "id": "e0dbd33be03f3e1b",
+        "type": "debug",
+        "z": "9cd95800f964c8d3",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "38780144dda8aa4b",
+        "type": "chatgpt",
+        "z": "9cd95800f964c8d3",
+        "name": "",
+        "APIKEY": "",
+        "x": 580,
+        "y": 140,
+        "wires": [
+            [
+                "e0dbd33be03f3e1b"
+            ]
+        ]
+    }
+]
